@@ -37,6 +37,15 @@ document.getElementById("languageInput").addEventListener("input", () => {
 
     let answer = document.getElementById("languageInput").value;
     let count = answer.length;
-    let language_string = `You like ${answer}. That takes ${count} characters.`;
+    let language_string = `You like ${answer}? That takes ${count} characters.`;
     document.getElementById("insightsOutput").innerText = language_string;
+});
+
+document.getElementById("languageInput2").addEventListener("input", () => {
+    /* Logic on updating the html element with id= 'languageInput'.*/
+
+   let answer = document.getElementById("languageInput2").value;
+   let count = answer.length;
+   let language_string = `You don't like ${answer}? That takes ${count} characters.`;
+   document.getElementById("insightsOutput2").innerText = language_string;
 });
